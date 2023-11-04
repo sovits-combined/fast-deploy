@@ -1,0 +1,1 @@
+bash <(curl -s https://raw.githubusercontent.com/sovits-combined/fast-deploy/main/deploy.sh)
