@@ -36,3 +36,10 @@ rm -rf ${main}/pretrain/rmvpe.zip
 mv ${main}/pretrain/model.pt ${main}/pretrain/rmvpe.pt
 
 curl -L -C - -o ${main}/pretrain/fcpe.pt ${fcpe}
+
+python3 -m venv ${work_dir}/venv
+source ${work_dir}/venv/bin/activate
+
+pip install --upgrade pip
+pip install wheel
+pip install -r ${main}/requirements.txt
